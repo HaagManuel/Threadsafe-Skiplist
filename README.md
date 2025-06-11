@@ -7,7 +7,7 @@ In addition, by keeping track of the length of the "skip-pointers", Skiplists ca
 This allows to efficiently search for the median or more generally the $k$-th element and to determine the rank of an element in sorted order.
 
 Skiplists can be made concurrent, allowing parallel thread-safe access to the data structure.
-There is a [lock-variant]((https://link.springer.com/content/pdf/10.1007/978-3-540-72951-8_11.pdf)) using a lazy-approach to update the Skiplist and a [lock-free variant](https://patentimages.storage.googleapis.com/3e/80/e8/7a7860dd318f16/US20100042584A1.pdf).
+There is a [lock-variant](https://link.springer.com/content/pdf/10.1007/978-3-540-72951-8_11.pdf) using a lazy-approach to update the Skiplist and a [lock-free variant](https://patentimages.storage.googleapis.com/3e/80/e8/7a7860dd318f16/US20100042584A1.pdf).
 This repository contains implementations of a sequential (indexable) Skiplist as well as both variants of the thread-safe Skiplist. 
 
 ![plot1](/images/skiplist.png)
